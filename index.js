@@ -20,10 +20,10 @@ const orderRoute = require("./routes/order")
 dotenv.config()
 
 //DEPLOY EN HEROKU
-app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(express.static(path.join(__dirname, "public")));
 //DEPLOY EN HEROKU
 app.use(
-  favicon(path.join(__dirname, "..", "public", "images", "favicon.ico"))
+  favicon(path.join(__dirname, "public", "images", "favicon.ico"))
 );
 
 
