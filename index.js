@@ -13,6 +13,10 @@ const authRoute = require("./routes/auth")
 const productsRoute = require("./routes/product")
 const cartRoute = require("./routes/cart")
 const orderRoute = require("./routes/order")
+const stripeRoute = require("./routes/stripe")
+
+
+const cors = require("cors")
 
 
 
@@ -36,7 +40,7 @@ mongoose.connect(process.env.MONGO_URL)
 .catch((error) => console.log(error))
 
 
-
+app.use(cors())
 app.use(express.json())
 
 
@@ -47,6 +51,7 @@ app.use("/api/users",userRoute)
 app.use("/api/products",productsRoute)
 app.use("/api/carrts",cartRoute)
 app.use("/api/orders",orderRoute)
+app.use("/api/checkout",stripeRoute)
 
 //DEPLOY EN HEROKU
 app.use("*", (req, res) => {
