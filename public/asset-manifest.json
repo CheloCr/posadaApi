@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.7c81a173.js",
+    "main.js": "/static/js/main.7ec7a12f.js",
     "static/media/Posada_Logo.png": "/static/media/Posada_Logo.4ddad1c7ccda29466637.png",
     "index.html": "/index.html",
-    "main.7c81a173.js.map": "/static/js/main.7c81a173.js.map"
+    "main.7ec7a12f.js.map": "/static/js/main.7ec7a12f.js.map"
   },
   "entrypoints": [
-    "static/js/main.7c81a173.js"
+    "static/js/main.7ec7a12f.js"
   ]
 }
